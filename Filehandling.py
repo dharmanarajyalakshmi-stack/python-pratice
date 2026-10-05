@@ -1,0 +1,15 @@
+# file handling in python 
+file=open("d:\\data.txt","r")
+data=file.read()
+print(data)
+file.close()
+file=open("d:\\data.txt","w")
+file.write("Hello python")
+file.close()
+file=open("d:\\data.txt","a")
+file.write("\n welcome to python")
+file.close()
+file=open("d:\\data.txt","r")
+for line in file:
+    print(line)
+file.close()
